@@ -1,0 +1,34 @@
+# Curated minimal requirements for the Employee Gesture Tracking project
+# Includes core libs used by `fixed_running.py`: YOLO (ultralytics), InsightFace, OpenCV, PyTorch, and utilities.
+
+# Numerical & image
+numpy==1.26.4
+opencv-python==4.8.1.78
+Pillow==11.3.0
+
+# YOLOv8 inference
+ultralytics==8.4.10
+
+# Face recognition (InsightFace)
+insightface==0.7.3
+
+# PyTorch (choose appropriate CUDA build for your system)
+# The project previously used CUDA 12.1 builds; adjust if you need CPU-only or different CUDA.
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+torchaudio==2.5.1+cu121
+
+# ONNX runtime (optional, required by some InsightFace models)
+onnx==1.19.1
+onnxruntime-gpu==1.23.2
+
+# Utilities
+tqdm==4.67.1
+PyYAML==6.0.3
+requests==2.32.5
+
+# NOTE:
+# - This file is intentionally minimal. Installing `ultralytics` and `insightface`
+#   will pull additional dependencies automatically. If you need a full, pinned
+#   environment (including exact versions for all transitive deps), let me know
+#   and I can produce a more exhaustive `requirements.txt` or a `conda` env.
