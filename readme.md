@@ -243,13 +243,6 @@ The system will:
 - Web dashboard (Flask / React)
 - Real-time alert system
 
----
-
-## 👨‍💻 Author
-
-**Aswanikrishna**  
-Diploma in Artificial Intelligence & Data Engineering  
-Skilled in Python, Machine Learning, and Computer Vision  
 
 ---
 
