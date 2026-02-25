@@ -231,10 +231,10 @@ class InferenceWorker(threading.Thread):
 # ============================================================
 if __name__ == "__main__":
     CAMERA_URLS = {
-        #   'Cam1': 'rtsp://admin:Admin%40123@192.168.1.200:554/Streaming/Channels/101',
-        # 'Cam2': 'rtsp://admin:Admin%25123@192.168.29.200:554/Streaming/Channels/201',
-        'Cam3': 'rtsp://admin:Admin%40123@192.168.1.200:554/Streaming/Channels/301',
-        # 'Cam4': 'rtsp://admin:Admin%25123@192.168.29.200:554/Streaming/Channels/401',
+        #   'Cam1': 'rtsp://username:password@ip:port/stream',
+        # 'Cam2': 'rtsp://username:password@ip:port/stream',
+        'Cam3': 'rtsp://username:password@ip:port/stream',
+        # 'Cam4': 'rtsp://username:password@ip:port/stream',
     }
 
     # Start RTSP readers
@@ -266,3 +266,4 @@ if __name__ == "__main__":
     # Close all OpenCV windows
     cv2.destroyAllWindows()
     print("System shutdown complete.")
+
